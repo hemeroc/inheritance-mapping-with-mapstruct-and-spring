@@ -76,10 +76,8 @@ class EntityDto extends BaseEntityDto {
 @Mapper(config = BaseEntityMapper.class)
 interface UserMapper {
 
-    @InheritConfiguration
     EntityDto entityToEntityDto(Entity entity);
 
-    @InheritConfiguration
     Entity entityDtoToEntity(EntityDto dto);
 
 }
